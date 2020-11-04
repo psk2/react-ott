@@ -27,7 +27,7 @@ function Home() {
                         </div>
                     </div>
                     <span class="d-flex justify-content-center invitation-heading">
-                        <a href="#"> Wedding Invitation </a>
+                        <a href="/"> Wedding Invitation </a>
                     </span>
                 </div>
             </div>
