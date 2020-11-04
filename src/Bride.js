@@ -5,10 +5,6 @@ import request from "./request";
 import Banner from "./Banner";
 import Nav from "./Nav";
 
-import {
-	Link
-} from "react-router-dom";
-
 function Bride() {
 	return (
 		<div className="app">
