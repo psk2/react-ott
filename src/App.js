@@ -1,28 +1,35 @@
 import React from "react";
 import "./App.css";
-import Row from "./Row";
-import request from "./request";
-import Banner from "./Banner";
-import Nav from "./Nav";
+import Home from "./Home";
+import Bride from "./Bride";
+
+
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="app">
-      <Nav />
-      <Banner />
-      <Row
-        title="NETFLIX ORIGINALS"
-        fetchUrl={request.fetchNetflixOriginals}
-        isLargeRow
-      />
-      <Row title="Trending Now" fetchUrl={request.fetchTrending} />
-      <Row title="Top Rated" fetchUrl={request.fetchTopRated} />
-      <Row title="Action Movies" fetchUrl={request.fetchActionMovies} />
-      <Row title="Comedy Movies" fetchUrl={request.fetchComedyMovies} />
-      <Row title="Horror Movies" fetchUrl={request.fetchHorrorMovies} />
-      <Row title="Documentaries" fetchUrl={request.fetchDocumentaries} />
-    </div>
-  );
+	return (
+		<div className="app">
+
+			<Router>
+				<Switch>
+					{/* <Route path="/groom">
+						<About />
+					</Route> */}
+					<Route path="/bride">
+						<Bride />
+					</Route>
+					<Route path="/">
+						<Home />
+					</Route>
+				</Switch>
+			</Router>
+		</div >
+	);
 }
 
 export default App;
