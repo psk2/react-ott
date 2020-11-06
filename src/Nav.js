@@ -5,7 +5,6 @@ import Avatar from "./Images/Avatar.jpg";
 function Nav() {
   const [show, handleShow] = useState(false);
   useEffect(() => {
-    console.log("test");
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
         handleShow(true);
