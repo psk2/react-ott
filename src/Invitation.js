@@ -7,13 +7,11 @@ function Invitation() {
     return (
         <React.Fragment>
             <Nav />
-
             <div className="container">
-
                 <div class="responsive" >
-                    < div class="gallery" >
+                    <div class="gallery" >
                         <img src={invitation}
-                            alt="Cinque Terre" />
+                            alt="Invitation" />
                     </div>
                 </div>
             </div>
