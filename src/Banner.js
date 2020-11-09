@@ -3,7 +3,7 @@ import "./Banner.css";
 import axios from "./axios";
 import requests from "./request";
 import YouTube from "react-youtube";
-import Engagement from "./Images/Engagement.jpg";
+import invitation from "./Images/invitation.jpg";
 
 function Banner() {
   const [movie, setMovie] = useState([]);
@@ -36,7 +36,7 @@ function Banner() {
         className="banner"
         // style={{
         //   backgroundSize: "cover",
-        //   backgroundImage: `url(${Engagement})`,
+        //   backgroundImage: `url(${invitation})`,
         //   backgroundPosition: "center center",
         // }}
       >
