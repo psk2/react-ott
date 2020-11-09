@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Nav.css";
 import Avatar from "./Images/Avatar.jpg";
+import logo from "./Images/logo.png";
 
 function Nav() {
   const [show, handleShow] = useState(false);
@@ -11,16 +12,12 @@ function Nav() {
       } else handleShow(false);
     });
     return () => {
-      window.removeEventListener("scroll");
+      window.removeEventListener("scroll", () => {});
     };
   }, []);
   return (
     <div className={`nav ${show && "nav__black"}`}>
-      <img
-        className="nav__logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/archive/0/08/20160220053054%21Netflix_2015_logo.svg"
-        alt="Netflix Logo"
-      />
+      <img className="nav__logo" src={logo} alt="Netflix Logo" />
       <img className="nav__avatar" src={Avatar} alt="Netflix Logo" />
     </div>
   );
