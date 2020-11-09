@@ -4,11 +4,16 @@ import { Link } from "react-router-dom";
 import logo from "./Images/logo.png";
 import groom from "./Images/groom.png";
 import bride from "./Images/bride.png";
+import "./Nav.css";
 
 function Home() {
   return (
     <div>
-      <img src={logo} width="320" height="70" alt="" />
+      <div className="logo">
+        <img className="nav__logo" src={logo} alt="Netflix Logo" />
+
+        {/* <img src={logo} width="320" height="70" alt="" /> */}
+      </div>
 
       <div className="h-70 d-flex justify-content-center align-items-center adjust-center">
         <div>

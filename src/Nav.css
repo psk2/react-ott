@@ -13,9 +13,10 @@
 }
 .nav__logo {
   position: fixed;
-  left: 20px;
-  width: 80px;
+  left: 35px;
+  width: 100px;
   object-fit: contain;
+  margin: 1.3vw;
 }
 .nav__avatar {
   position: fixed;
@@ -23,3 +24,15 @@
   width: 30px;
   object-fit: contain;
 }
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+  img.nav__logo {
+    text-align: center;
+  }
+}
+
+/* @media screen and (min-width: 1150px){
+  .nav__logo {
+      margin-right: 25px;
+  } 
+} */

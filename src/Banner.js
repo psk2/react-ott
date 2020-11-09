@@ -3,6 +3,7 @@ import "./Banner.css";
 import axios from "./axios";
 import requests from "./request";
 import YouTube from "react-youtube";
+import Engagement from "./Images/Engagement.jpg";
 
 function Banner() {
   const [movie, setMovie] = useState([]);
@@ -12,18 +13,18 @@ function Banner() {
       const request = await axios.get(requests.fetchNetflixOriginals);
       setMovie(
         request.data.results[
-          Math.floor(Math.random() * request.data.results.length - 1)
+        Math.floor(Math.random() * request.data.results.length - 1)
         ]
       );
       return request;
     }
     fetchData();
   }, []);
-  function truncate(str, n) {
-    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-  }
+  // function truncate(str, n) {
+  //   return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+  // }
   const opts = {
-    height: "448",
+    height: "500",
     width: "100%",
     playerVars: {
       autoplay: 1,
@@ -33,12 +34,11 @@ function Banner() {
     <div>
       <header
         className="banner"
-        style={{
-          backgroundSize: "cover",
-          backgroundImage: `url(
-              "https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-          backgroundPosition: "center center",
-        }}
+        // style={{
+        //   backgroundSize: "cover",
+        //   backgroundImage: `url(${Engagement})`,
+        //   backgroundPosition: "center center",
+        // }}
       >
         {/* <div className="banner__contents">
           <h1 className="banner__title">
@@ -53,7 +53,7 @@ function Banner() {
           </h1>
         </div> 
         <div className="banner__fadeBottom"></div> */}
-        <YouTube videoId="aN_EvIKPxrE" opts={opts} />
+        <YouTube videoId="1tL0rsKvZFE" opts={opts} />
       </header>
     </div>
   );

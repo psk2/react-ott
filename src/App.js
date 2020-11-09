@@ -16,9 +16,9 @@ function App() {
 
 			<Router>
 				<Switch>
-					{/* <Route path="/groom">
-						<About />
-					</Route> */}
+					<Route path="/groom">
+						<Bride />
+					</Route>
 					<Route path="/bride">
 						<Bride />
 					</Route>
