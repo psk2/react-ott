@@ -1,13 +1,14 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import wi from "./Images/wi.jpg";
-import psk from "./Images/psk.jpg";
+import logo from "./Images/logo.png";
+import groom from "./Images/groom.png";
+import bride from "./Images/bride.png";
 
 function Home() {
   return (
     <div>
-      <img src={wi} width="320" height="70" alt="" />
+      <img src={logo} width="320" height="70" alt="" />
 
       <div className="h-70 d-flex justify-content-center align-items-center adjust-center">
         <div>
@@ -15,15 +16,33 @@ function Home() {
             Whose Wedding ?
           </div>
           <div className="row d-flex justify-content-center align-items-center  profiles-row">
-            <div className="profiles-gate-container">
-              <Link to="/bride">
-                <img src={psk} width="100" height="100" alt="" />
+            <div className="">
+              <Link to="/bride" className="profile">
+                <div>
+                  <img
+                    className="profiles-gate-container"
+                    src={groom}
+                    width="120"
+                    height="120"
+                    alt="PSK"
+                  />
+                  <label className="profile-name">PSK</label>
+                </div>
               </Link>
             </div>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <div className="profiles-gate-container">
-              <Link to="/bride">
-                <img src={psk} width="100" height="100" alt="" />
+            <div className="">
+              <Link to="/bride" className="profile">
+                <div>
+                  <img
+                    className="profiles-gate-container"
+                    src={bride}
+                    width="120"
+                    height="120"
+                    alt=""
+                  />
+                  <label className="profile-name">Lahari</label>
+                </div>
               </Link>
             </div>
           </div>
