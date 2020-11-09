@@ -10,8 +10,9 @@ function Home() {
   return (
     <div>
       <div className="logo">
-        <img className="nav__logo" src={logo} alt="Netflix Logo" />
-
+        <Link to="/browse" >
+          <img className="nav__logo" src={logo} alt="SAHARI Logo" />
+        </Link>
         {/* <img src={logo} width="320" height="70" alt="" /> */}
       </div>
 
@@ -52,7 +53,7 @@ function Home() {
             </div>
           </div>
           <span className="d-flex justify-content-center invitation-heading">
-            <a href="/"> Wedding Invitation </a>
+            <Link to="/invitation"> Wedding Invitation </Link>
           </span>
         </div>
       </div>
