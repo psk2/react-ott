@@ -7,7 +7,7 @@ import Nav from "./Nav";
 
 function Home() {
   return (
-    <div>
+    <div className="adjust-center">
       <div className="logo">
         <Nav />
       </div>
@@ -19,7 +19,7 @@ function Home() {
           </div>
           <div className="row d-flex justify-content-center align-items-center  profiles-row">
             <div className="">
-              <Link to="/bride" className="profile">
+              <Link to="/groom" className="profile">
                 <div>
                   <img
                     className="profiles-gate-container"
