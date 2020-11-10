@@ -13,9 +13,7 @@ function Banner() {
   };
   return (
     <div>
-      <header
-        className="banner"
-      >
+      <header className="banner">
         <YouTube videoId="KhYuwCmGOzY" opts={opts} />
       </header>
     </div>

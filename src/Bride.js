@@ -10,12 +10,8 @@ function Bride() {
     <div className="app">
       <Nav />
       <Banner />
-      <Row
-        title="NETFLIX ORIGINALS"
-        fetchUrl={request.fetchNetflixOriginals}
-        isLargeRow
-      />
-      {/* <Row title="Trending Now" fetchUrl={request.fetchTrending} /> */}
+      <Row title="NETFLIX ORIGINALS" data={request.trendingMovies} isLargeRow />
+      <Row title="Trending Now" data={request.trendingMovies} />
       {/* <Row title="Top Rated" fetchUrl={request.fetchTopRated} />
       <Row title="Action Movies" fetchUrl={request.fetchActionMovies} />
       <Row title="Comedy Movies" fetchUrl={request.fetchComedyMovies} />

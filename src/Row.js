@@ -12,17 +12,9 @@ import {
 const base_url = "https://image.tmdb.org/t/p/original/";
 
 function Row(props) {
-  const [movies, setMovies] = useState([]);
+  const movies = props.data;
   const [trailerUrl, setTrailerUrl] = useState("");
   const ref = useRef(null);
-  useEffect(() => {
-    async function fetchData() {
-      const request = await axios.get(props.fetchUrl);
-      setMovies(request.data.results);
-      return request;
-    }
-    fetchData();
-  }, [props.fetchUrl]);
 
   const scroll = (scrollOffset) => {
     ref.current.scrollLeft += scrollOffset;
@@ -71,9 +63,7 @@ function Row(props) {
               }`}
               key={movie.id}
               onClick={() => handleClick(movie)}
-              src={`${base_url}${
-                props.isLargeRow ? movie.poster_path : movie.backdrop_path
-              }`}
+              src={movie.poster_path}
               alt={movie.name}
             />
           ))}
