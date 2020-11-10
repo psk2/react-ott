@@ -20,14 +20,13 @@ function Nav() {
   }, []);
 
   const location = useLocation();
-  console.log(location.pathname);
   useEffect(() => {
     if ((location.pathname !== "/browse") || (location.pathname !== "/invitation")) {
       handleShowAvatar(false)
     } else {
       handleShowAvatar(true)
     }
-  }, []);
+  }, [location.pathname]);
   return (
     <div className={`nav ${show && "nav__black"}`}>
       <Link to="/browse" >
@@ -39,5 +38,4 @@ function Nav() {
     </div>
   );
 }
-// {((location.pathname !== "/browse") || (location.pathname !== "/invitation")) &&
 export default Nav;
