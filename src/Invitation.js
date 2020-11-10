@@ -8,8 +8,8 @@ function Invitation() {
         <React.Fragment>
             <Nav />
             <div className="container">
-                <div class="responsive" >
-                    <div class="gallery" >
+                <div className="responsive" >
+                    <div className="gallery" >
                         <img src={invitation}
                             alt="Invitation" />
                     </div>

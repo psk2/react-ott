@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 20px;
+  padding: 12px;
   height: 70px;
   z-index: 2;
   transition-timing-function: ease-in;
@@ -16,7 +16,6 @@
   left: 35px;
   width: 100px;
   object-fit: contain;
-  margin: 1.3vw;
 }
 .nav__avatar {
   position: fixed;
