@@ -7,6 +7,7 @@ import groom from "./Images/groom.png";
 
 function Nav() {
   const [show, handleShow] = useState(false);
+  const [showAvatar, handleShowAvatar] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
@@ -20,17 +21,23 @@ function Nav() {
 
   const location = useLocation();
   console.log(location.pathname);
-
+  useEffect(() => {
+    if ((location.pathname !== "/browse") || (location.pathname !== "/invitation")) {
+      handleShowAvatar(false)
+    } else {
+      handleShowAvatar(true)
+    }
+  }, []);
   return (
     <div className={`nav ${show && "nav__black"}`}>
       <Link to="/browse" >
         <img className="nav__logo" src={logo} alt="Netflix Logo" />
       </Link>
-      {location.pathname !== "/browse" &&
+      {showAvatar &&
         <img className="nav__avatar" src={location.pathname === "/bride" ? bride : groom} alt="Netflix Logo" />
       }
     </div>
   );
 }
-
+// {((location.pathname !== "/browse") || (location.pathname !== "/invitation")) &&
 export default Nav;
