@@ -38,7 +38,7 @@ function Banner() {
             </div>
           </div>
         </div>}
-        {showTitles && <YouTube videoId="KhYuwCmGOzY" opts={opts} />}
+        {showTitles && <YouTube videoId="imY6QMDs4qU" opts={opts} />}
       </header>
       <div className="banner__fadeBottom"></div>
     </div>
