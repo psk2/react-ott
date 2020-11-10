@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import axios from "./axios";
+import React, { useState, useRef } from "react";
 import "./Row.css";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
@@ -8,8 +7,6 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-
-const base_url = "https://image.tmdb.org/t/p/original/";
 
 function Row(props) {
   const movies = props.data;
@@ -23,7 +20,6 @@ function Row(props) {
     height: "390",
     width: "100%",
     playerVars: {
-      //https://developers.google.com/youtube/player_parameters"
       autoplay: 1,
     },
   };

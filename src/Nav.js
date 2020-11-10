@@ -27,7 +27,7 @@ function Nav() {
         <img className="nav__logo" src={logo} alt="Netflix Logo" />
       </Link>
       {location.pathname !== "/browse" &&
-        <img className="nav__avatar" src={location.pathname == "/bride" ? bride : groom} alt="Netflix Logo" />
+        <img className="nav__avatar" src={location.pathname === "/bride" ? bride : groom} alt="Netflix Logo" />
       }
     </div>
   );

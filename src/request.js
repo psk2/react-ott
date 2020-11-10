@@ -2,8 +2,6 @@ import image1 from "./Images/image1.jpg";
 import image2 from "./Images/image2.jpg";
 import image3 from "./Images/image3.jpg";
 
-const API_KEY = "9c9535c15bce5f9ecce97ba1d1337bbd";
-
 const trendingMovies = [
   {
     id: 1,
@@ -91,17 +89,6 @@ const trendingMovies = [
     poster_path: image2,
   },
 ];
-
-const requests = {
-  fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
-  fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
-  fetchTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
-  fetchActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
-  fetchComedyMovies: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
-  fetchHorrorMovies: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
-  fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
-  fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
-};
 
 export default {
   trendingMovies,

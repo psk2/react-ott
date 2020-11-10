@@ -12,7 +12,7 @@ function Bride() {
       <Banner />
       <Row
         title="WEDDING DETAILS"
-        fetchUrl={request.fetchNetflixOriginals}
+        data={request.trendingMovies}
         isLargeRow
       />
     </div>
