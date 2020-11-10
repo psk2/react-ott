@@ -41,7 +41,7 @@ function Row(props) {
   };
   return (
     <div className="posterrow">
-      <h2>{props.title}</h2>
+      <h2 className="row_title">{props.title}</h2>
       <div className="wrapper">
         <div className="row__posters" ref={ref}>
           <div
@@ -58,9 +58,8 @@ function Row(props) {
           </div>
           {movies.map((movie) => (
             <img
-              className={`row__poster ${
-                props.isLargeRow && "row__posterLarge"
-              }`}
+              className={`row__poster ${props.isLargeRow && "row__posterLarge"
+                }`}
               key={movie.id}
               onClick={() => handleClick(movie)}
               src={movie.poster_path}

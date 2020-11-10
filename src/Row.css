@@ -33,7 +33,7 @@
 .angleLeftLarge,
 .angleRightLarge {
   color: white;
-  font-size: 2.7rem;
+  font-size: 2.3rem;
   background-color: rgba(0, 0, 0, 0.5);
   top: 40%;
   z-index: 1;
@@ -70,4 +70,7 @@
 }
 .row__posterLarge:hover {
   transform: scale(1.09);
+}
+.row_title {
+  margin-left: 20px;
 }

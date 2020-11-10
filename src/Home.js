@@ -1,19 +1,15 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import logo from "./Images/logo.png";
 import groom from "./Images/groom.png";
 import bride from "./Images/bride.png";
-import "./Nav.css";
+import Nav from "./Nav";
 
 function Home() {
   return (
-    <div>
+    <div className="adjust-center">
       <div className="logo">
-        <Link to="/browse" >
-          <img className="nav__logo" src={logo} alt="SAHARI Logo" />
-        </Link>
-        {/* <img src={logo} width="320" height="70" alt="" /> */}
+        <Nav />
       </div>
 
       <div className="h-70 d-flex justify-content-center align-items-center adjust-center">
@@ -23,7 +19,7 @@ function Home() {
           </div>
           <div className="row d-flex justify-content-center align-items-center  profiles-row">
             <div className="">
-              <Link to="/bride" className="profile">
+              <Link to="/groom" className="profile">
                 <div>
                   <img
                     className="profiles-gate-container"
