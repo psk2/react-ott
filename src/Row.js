@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import axios from "./axios";
+import React, { useState, useRef } from "react";
 import "./Row.css";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
@@ -9,20 +8,10 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-const base_url = "https://image.tmdb.org/t/p/original/";
-
 function Row(props) {
-  const [movies, setMovies] = useState([]);
+  const movies = props.data;
   const [trailerUrl, setTrailerUrl] = useState("");
   const ref = useRef(null);
-  useEffect(() => {
-    async function fetchData() {
-      const request = await axios.get(props.fetchUrl);
-      setMovies(request.data.results);
-      return request;
-    }
-    fetchData();
-  }, [props.fetchUrl]);
 
   const scroll = (scrollOffset) => {
     ref.current.scrollLeft += scrollOffset;
@@ -31,7 +20,6 @@ function Row(props) {
     height: "390",
     width: "100%",
     playerVars: {
-      //https://developers.google.com/youtube/player_parameters"
       autoplay: 1,
     },
   };
@@ -49,7 +37,7 @@ function Row(props) {
   };
   return (
     <div className="posterrow">
-      <h2>{props.title}</h2>
+      <h2 className="row_title">{props.title}</h2>
       <div className="wrapper">
         <div className="row__posters" ref={ref}>
           <div
@@ -66,14 +54,11 @@ function Row(props) {
           </div>
           {movies.map((movie) => (
             <img
-              className={`row__poster ${
-                props.isLargeRow && "row__posterLarge"
-              }`}
+              className={`row__poster ${props.isLargeRow && "row__posterLarge"
+                }`}
               key={movie.id}
               onClick={() => handleClick(movie)}
-              src={`${base_url}${
-                props.isLargeRow ? movie.poster_path : movie.backdrop_path
-              }`}
+              src={movie.poster_path}
               alt={movie.name}
             />
           ))}

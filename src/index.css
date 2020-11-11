@@ -13,16 +13,6 @@ code {
     monospace;
 }
 
-/* body {
-  background:#141414;
-  color:#fff
-} */
-
-/* html,
-body {
-  height: 100%;
-} */
-
 @media screen and (max-width: 800px) {
   .heading {
     font-size: 30px;
@@ -30,7 +20,7 @@ body {
 }
 
 .heading {
-  font-size: 3vw;
+  font-size: 3.5vw;
   text-align: center;
   font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
@@ -45,10 +35,6 @@ body {
 .image-fit {
   object-fit: cover;
 }
-
-/* .profile-image {
-  background:url("photo.jpg")
-} */
 
 .profiles-row {
   margin: 2em 0;
@@ -132,4 +118,21 @@ body {
 .invitation-heading span:hover {
   color: #fff !important;
   border: 1px solid #fff;
+  text-decoration: none;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+  .logo {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1150px){
+  .logo {
+      margin-right: 25px;
+  } 
 }

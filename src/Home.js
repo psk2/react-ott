@@ -1,14 +1,16 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import logo from "./Images/logo.png";
 import groom from "./Images/groom.png";
 import bride from "./Images/bride.png";
+import Nav from "./Nav";
 
 function Home() {
   return (
-    <div>
-      <img src={logo} width="320" height="70" alt="" />
+    <div className="adjust-center">
+      <div className="logo">
+        <Nav />
+      </div>
 
       <div className="h-70 d-flex justify-content-center align-items-center adjust-center">
         <div>
@@ -17,7 +19,7 @@ function Home() {
           </div>
           <div className="row d-flex justify-content-center align-items-center  profiles-row">
             <div className="">
-              <Link to="/bride" className="profile">
+              <Link to="/groom" className="profile">
                 <div>
                   <img
                     className="profiles-gate-container"
@@ -47,7 +49,7 @@ function Home() {
             </div>
           </div>
           <span className="d-flex justify-content-center invitation-heading">
-            <a href="/"> Wedding Invitation </a>
+            <Link to="/invitation"> Wedding Invitation </Link>
           </span>
         </div>
       </div>

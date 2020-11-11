@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 20px;
+  padding: 12px;
   height: 70px;
   z-index: 2;
   transition-timing-function: ease-in;
@@ -13,8 +13,8 @@
 }
 .nav__logo {
   position: fixed;
-  left: 20px;
-  width: 80px;
+  left: 35px;
+  width: 100px;
   object-fit: contain;
 }
 .nav__avatar {
@@ -22,4 +22,17 @@
   right: 20px;
   width: 30px;
   object-fit: contain;
+  border-radius: 4px;
 }
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+  img.nav__logo {
+    text-align: center;
+  }
+}
+
+/* @media screen and (min-width: 1150px){
+  .nav__logo {
+      margin-right: 25px;
+  } 
+} */

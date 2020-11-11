@@ -1,33 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Banner.css";
-import axios from "./axios";
-import requests from "./request";
 import YouTube from "react-youtube";
+import invitation2 from "./Images/invitation2.jpg";
 
 function Banner() {
-  const [movie, setMovie] = useState([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      const request = await axios.get(requests.fetchNetflixOriginals);
-      setMovie(
-        request.data.results[
-          Math.floor(Math.random() * request.data.results.length - 1)
-        ]
-      );
-      return request;
-    }
-    fetchData();
-  }, []);
-  function truncate(str, n) {
-    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-  }
   const opts = {
-    height: "448",
+    height: "500",
     width: "100%",
     playerVars: {
-      autoplay: 1,
+      autoplay: 0,
     },
+  };
+  const banner_descripion = `We may not have it all together, but together we have it all.`
+  const [showTitles, setShowTitles] = useState(false);
+  const playTitles = () => {
+    setShowTitles(true)
   };
   return (
     <div>
@@ -35,26 +22,25 @@ function Banner() {
         className="banner"
         style={{
           backgroundSize: "cover",
-          backgroundImage: `url(
-              "https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+          backgroundImage: `url(${!showTitles && invitation2})`,
           backgroundPosition: "center center",
         }}
       >
-        {/* <div className="banner__contents">
-          <h1 className="banner__title">
-            {movie?.title || movie?.name || movie?.original_name}
-          </h1>
-          <div className="banner__buttons">
-            <button className="banner__button">Play</button>
-            <button className="banner__button">My List</button>
+        {!showTitles && <div className="banner__contents">
+          <div className="banner__contents">
+            <h1 className="banner__title">
+              SAHARI WEDDING
+             </h1>
+            <h1 className="banner__description">{banner_descripion}</h1>
+            <div className="banner__buttons">
+              <button className="banner__button banner_play_button" onClick={() => playTitles()}>Play</button>
+              <button className="banner__button">My List</button>
+            </div>
           </div>
-          <h1 className="banner__description">
-            {truncate(movie?.overview, 150)}
-          </h1>
-        </div> 
-        <div className="banner__fadeBottom"></div> */}
-        <YouTube videoId="aN_EvIKPxrE" opts={opts} />
+        </div>}
+        {showTitles && <YouTube videoId="imY6QMDs4qU" opts={opts} />}
       </header>
+      <div className="banner__fadeBottom"></div>
     </div>
   );
 }
