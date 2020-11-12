@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 import Row from "./Row";
-import request from "./request";
+import groom_images from "./groom_images";
+// import bride_images from "./bride_images";
 import Banner from "./Banner";
 import Nav from "./Nav";
 
@@ -11,8 +12,8 @@ function Bride() {
       <Nav />
       <Banner />
       <Row
-        title="WEDDING DETAILS"
-        data={request.trendingMovies}
+        title="GALLERY"
+        data={groom_images.groomImages}
         isLargeRow
       />
     </div>

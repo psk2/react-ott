@@ -28,7 +28,7 @@ function Home() {
                     height="120"
                     alt="PSK"
                   />
-                  <label className="profile-name">PSK</label>
+                  <label className="profile-name">Sai Krishna</label>
                 </div>
               </Link>
             </div>
@@ -43,7 +43,7 @@ function Home() {
                     height="120"
                     alt=""
                   />
-                  <label className="profile-name">Lahari</label>
+                  <label className="profile-name">Mohana Lahari</label>
                 </div>
               </Link>
             </div>

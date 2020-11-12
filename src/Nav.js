@@ -23,7 +23,7 @@ function Nav() {
   return (
     <div className={`nav ${show && "nav__black"}`}>
       <Link to="/browse" >
-        <img className="nav__logo" src={logo} alt="Netflix Logo" />
+        <img className={`nav__logo ${location.pathname === "/browse" && "nav__logo_responsive"}`} src={logo} alt="Netflix Logo" />
       </Link>
       <img className="nav__avatar" src={location.pathname === "/bride" ? bride : location.pathname === "/groom" ? groom : null} alt="" />
     </div>

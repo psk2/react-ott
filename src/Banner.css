@@ -18,10 +18,11 @@
   height: 330px; */
 }
 .banner__title {
+  font-family: cursive;
   font-size: 3rem;
   font-weight: 800;
   padding-bottom: 0.3rem;
-  color: rgb(39, 33, 33);
+  color: #fff;
 }
 .banner__description {
   color: #fff;

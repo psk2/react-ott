@@ -25,9 +25,14 @@
   border-radius: 4px;
 }
 
-@media screen and (min-width: 425px) and (max-width: 767px){
-  img.nav__logo {
-    text-align: center;
+@media screen and (min-width: 300px) and (max-width: 767px){
+  .nav__logo_responsive {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 

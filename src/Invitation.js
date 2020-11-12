@@ -11,6 +11,12 @@ function Invitation() {
         <div className="gallery">
           <img className="gallery__image" src={invitation} alt="Invitation" />
         </div>
+        <div className="gallery">
+          <img className="gallery__image" src={invitation} alt="Invitation" />
+        </div>
+        <div className="gallery">
+          <img className="gallery__image" src={invitation} alt="Invitation" />
+        </div>
       </div>
     </React.Fragment>
   );
