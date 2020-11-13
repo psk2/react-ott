@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./Home";
 import Bride from "./Bride";
 import Invitation from "./Invitation";
-
+import Landing from "./Landing";
 
 import {
 	BrowserRouter as Router,
@@ -15,11 +15,10 @@ import {
 function App() {
 	return (
 		<div className="app">
-
 			<Router>
 				<Switch>
 				<Route exact path="/">
-						<Redirect to="/browse" />
+						<Redirect to="/landing" />
 					</Route>
 					<Route path="/groom">
 						<Bride />
@@ -30,11 +29,11 @@ function App() {
 					<Route path="/invitation">
 						<Invitation />
 					</Route>
-					<Route path="/">
-						<Home />
-					</Route>
 					<Route path="/browse">
 						<Home />
+					</Route>
+					<Route path="/landing">
+						<Landing />
 					</Route>
 				</Switch>
 			</Router>
