@@ -20,7 +20,7 @@ function Bride() {
       <Nav />
       <Banner />
       <Row
-        title="GALLERY"
+        title="Trending People"
         data={images}
         isLargeRow
       />

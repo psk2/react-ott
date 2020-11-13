@@ -13,12 +13,6 @@ code {
     monospace;
 }
 
-@media screen and (max-width: 800px) {
-  .heading {
-    font-size: 30px;
-  }
-}
-
 .heading {
   font-size: 3.5vw;
   text-align: center;
@@ -126,12 +120,15 @@ code {
 }
 
 .welcome-logo {
-	width: 150px;
+	width: 175px;
 }
 
-@media screen and (min-width: 425px) and (max-width: 767px){
+@media screen and (min-width: 330px) and (max-width: 767px){
   .logo {
     text-align: center;
+  }
+  .heading {
+    font-size: 4.5vw;
   }
 }
 
