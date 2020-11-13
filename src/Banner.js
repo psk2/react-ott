@@ -5,6 +5,11 @@ import poster from "./Images/banner/poster.jpg";
 import poster2 from "./Images/banner/poster2.jpg";
 import poster3 from "./Images/banner/poster3.jpg";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faPlay,
+} from "@fortawesome/free-solid-svg-icons";
+
 function Banner() {
 	const opts = {
 		height: "500",
@@ -35,9 +40,9 @@ function Banner() {
 		window.addEventListener('resize', handleResize)
 	}, []);
 	// console.log('dimensions :>> ', dimensions);
-	if(dimensions.width < 500){
+	if (dimensions.width < 500) {
 		image_src = poster;
-	} else if(dimensions.width < 800){
+	} else if (dimensions.width < 800) {
 		image_src = poster2;
 	} else {
 		image_src = poster3;
@@ -61,9 +66,9 @@ function Banner() {
 										className="banner__button banner_play_button"
 										onClick={() => playTitles()}
 									>
-										Play
+										<FontAwesomeIcon icon={faPlay} /> &nbsp; Play
                 					</button>
-									<button className="banner__button">My List</button>
+									{/* <button className="banner__button">My List</button> */}
 								</div>
 							</div>
 						</React.Fragment>
