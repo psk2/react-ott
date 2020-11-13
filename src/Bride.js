@@ -8,11 +8,6 @@ import Nav from "./Nav";
 import { useLocation } from "react-router-dom";
 
 function Bride() {
-  var scope = {
-    splitterStyle: {
-      height: 200
-    }
-  };
   const location = useLocation();
   let images = [];
   if (location.pathname === "/bride") {
