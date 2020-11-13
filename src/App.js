@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./Home";
 import Bride from "./Bride";
 import Invitation from "./Invitation";
-import Landing from "./Landing";
+import Welcome from "./welcome";
 
 import {
 	BrowserRouter as Router,
@@ -18,7 +18,7 @@ function App() {
 			<Router>
 				<Switch>
 				<Route exact path="/">
-						<Redirect to="/landing" />
+						<Redirect to="/welcome" />
 					</Route>
 					<Route path="/groom">
 						<Bride />
@@ -32,8 +32,8 @@ function App() {
 					<Route path="/browse">
 						<Home />
 					</Route>
-					<Route path="/landing">
-						<Landing />
+					<Route path="/welcome">
+						<Welcome />
 					</Route>
 				</Switch>
 			</Router>
