@@ -4,6 +4,7 @@ import YouTube from "react-youtube";
 import poster from "./Images/banner/poster.jpg";
 import poster2 from "./Images/banner/poster2.jpg";
 import poster3 from "./Images/banner/poster3.jpg";
+import { useLocation } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,11 +19,19 @@ function Banner() {
 			autoplay: 1,
 		},
 	};
+	const location = useLocation();
 	let image_src = poster3;
 	const banner_descripion = `We may not have it all together, but together we have it all.`;
 	const [showTitles, setShowTitles] = useState(false);
+	const [showLive, setShowLive] = useState(false);
+	const [showBanner, setShowBanner] = useState(true);
 	const playTitles = () => {
 		setShowTitles(true);
+		setShowBanner(false);
+	};
+	const playLive = () => {
+		setShowLive(true);
+		setShowBanner(false);
 	};
 
 	const [dimensions, setDimensions] = React.useState({
@@ -48,10 +57,10 @@ function Banner() {
 		image_src = poster3;
 	}
 	return (
-		<div>
+		<div className="adjust-banner">
 			<header>
 				<div className="banner">
-					{!showTitles && (
+					{showBanner && (
 						<React.Fragment>
 							<img
 								className="banner__image"
@@ -66,14 +75,26 @@ function Banner() {
 										className="banner__button banner_play_button"
 										onClick={() => playTitles()}
 									>
-										<FontAwesomeIcon icon={faPlay} /> &nbsp; Play
+										<FontAwesomeIcon icon={faPlay} /> &nbsp; Play Titles
                 					</button>
-									{/* <button className="banner__button">My List</button> */}
+									<button className="banner__button"
+										onClick={() => playLive()}
+									>
+										<FontAwesomeIcon icon={faPlay} /> &nbsp;  Watch Live
+									</button>
 								</div>
 							</div>
 						</React.Fragment>
 					)}
-					{showTitles && <YouTube videoId="imY6QMDs4qU" opts={opts} />}
+					{location.pathname === "/bride" && showTitles &&
+
+						<YouTube videoId="imY6QMDs4qU" opts={opts} />
+					}
+					{location.pathname === "/groom" && showTitles &&
+
+						<YouTube videoId="1tL0rsKvZFE" opts={opts} />
+					}
+					{showLive && <YouTube videoId="bySGXXftWJA" opts={opts} />}
 				</div>
 				<div className="banner__fadeBottom"></div>
 			</header>
