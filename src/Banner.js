@@ -20,6 +20,13 @@ function Banner() {
 		},
 	};
 	const location = useLocation();
+
+	// Youtube videos links - VIdeo ID
+	const groom_titles = "1tL0rsKvZFE";
+	const bride_titles = "imY6QMDs4qU";
+	const live_video = "bySGXXftWJA";
+
+
 	let image_src = poster3;
 	const banner_descripion = `We may not have it all together, but together we have it all.`;
 	const [showTitles, setShowTitles] = useState(false);
@@ -88,13 +95,13 @@ function Banner() {
 					)}
 					{location.pathname === "/bride" && showTitles &&
 
-						<YouTube videoId="imY6QMDs4qU" opts={opts} />
+						<YouTube videoId={bride_titles} opts={opts} />
 					}
 					{location.pathname === "/groom" && showTitles &&
 
-						<YouTube videoId="1tL0rsKvZFE" opts={opts} />
+						<YouTube videoId={groom_titles} opts={opts} />
 					}
-					{showLive && <YouTube videoId="bySGXXftWJA" opts={opts} />}
+					{showLive && <YouTube videoId={live_video} opts={opts} />}
 				</div>
 				<div className="banner__fadeBottom"></div>
 			</header>
