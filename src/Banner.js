@@ -24,7 +24,7 @@ function Banner() {
 	// Youtube videos links - VIdeo ID
 	const groom_titles = "1tL0rsKvZFE";
 	const bride_titles = "imY6QMDs4qU";
-	const live_video = "bySGXXftWJA";
+	const live_video = "tJqe3WHqiJw";
 
 
 	let image_src = poster3;
