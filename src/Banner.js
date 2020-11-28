@@ -3,7 +3,6 @@ import "./Banner.css";
 import YouTube from "react-youtube";
 import poster from "./Images/banner/poster.jpg";
 import poster2 from "./Images/banner/poster2.jpg";
-import poster3 from "./Images/banner/poster3.jpg";
 import { useLocation } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,7 +26,7 @@ function Banner() {
 	const live_video = "tJqe3WHqiJw";
 
 
-	let image_src = poster3;
+	let image_src = poster2;
 	const banner_descripion = `We may not have it all together, but together we have it all.`;
 	const [showTitles, setShowTitles] = useState(false);
 	const [showLive, setShowLive] = useState(false);
@@ -58,10 +57,8 @@ function Banner() {
 	// console.log('dimensions :>> ', dimensions);
 	if (dimensions.width < 500) {
 		image_src = poster;
-	} else if (dimensions.width < 800) {
-		image_src = poster2;
 	} else {
-		image_src = poster3;
+		image_src = poster2;
 	}
 	return (
 		<div className="adjust-banner">
@@ -75,8 +72,11 @@ function Banner() {
 								alt="Invitation"
 							/>
 							<div className="banner__contents">
-								<h1 className="banner__title">JOY OF LOVE</h1>
-								<h1 className="banner__description">{banner_descripion}</h1>
+								<div className="content">
+									<h1 className="banner__title">JOY OF LOVE</h1>
+									<h1 className="banner__description">{banner_descripion}</h1>
+
+								</div>
 								<div className="banner__buttons">
 									<button
 										className="banner__button banner_play_button"

@@ -24,7 +24,11 @@ function Bride() {
         data={images}
         isLargeRow
       />
-      <div className="footer"></div>
+      <div className="footer">
+        <footer className="location-text">
+          <a href="https://goo.gl/maps/dj7Zi3YTyNrwscJe9" target="_blank">You Can Find Venue Directions Here!</a>
+        </footer>
+      </div>
     </div>
   );
 }
