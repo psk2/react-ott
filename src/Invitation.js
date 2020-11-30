@@ -11,7 +11,7 @@ function Invitation() {
     <React.Fragment>
       <Nav />
       <div className="invitation">
-        <div className="gallery">
+        <div className="gallery gallery1">
           <img className="gallery__image" src={invitation1} alt="Invitation" />
           <div className="desc">Sai Krishna weds Mohana Lahari</div>
         </div>
