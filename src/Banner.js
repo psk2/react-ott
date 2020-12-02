@@ -21,8 +21,8 @@ function Banner() {
 	const location = useLocation();
 
 	// Youtube videos links - VIdeo ID
-	const groom_titles = "IZF6otPO-Aw";
-	const bride_titles = "imY6QMDs4qU";
+	const groom_titles = "sUiZbwtLV2U";
+	const bride_titles = "_PRM6THEXQo";
 	const live_video = "tJqe3WHqiJw";
 
 	let image_src = poster2;
@@ -81,7 +81,7 @@ function Banner() {
 										className="banner__button banner_play_button"
 										onClick={() => playTitles()}
 									>
-										<FontAwesomeIcon icon={faPlay} /> &nbsp; Play Titles
+										<FontAwesomeIcon icon={faPlay} /> &nbsp; Play Trailer
                 					</button>
 									<button className="banner__button"
 										onClick={() => playLive()}
