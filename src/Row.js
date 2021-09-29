@@ -59,6 +59,8 @@ function Row(props) {
               key={movie.id}
               onClick={() => handleClick(movie)}
               src={movie.poster_path}
+              height="300px"
+              width="200px"
               alt={movie.name}
             />
           ))}
