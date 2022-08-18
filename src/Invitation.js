@@ -2,8 +2,8 @@ import React from "react";
 import "./invitation.css";
 import invitation1 from "./Images/invitations/invitation1.jpeg";
 import invitation2 from "./Images/invitations/invitation2.jpeg";
-import invitation3 from "./Images/invitations/invitation3.jpeg";
-import invitation4 from "./Images/invitations/invitation4.jpeg";
+// import invitation3 from "./Images/invitations/invitation3.jpeg";
+// import invitation4 from "./Images/invitations/invitation4.jpeg";
 import Nav from "./Nav";
 
 function Invitation() {
