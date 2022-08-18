@@ -26,9 +26,9 @@ function Home() {
 										src={groom}
 										width="120"
 										height="120"
-										alt="PSK"
+										alt="Subbu"
 									/>
-									<label className="profile-name">Sai Krishna</label>
+									<label className="profile-name">Subramanyam</label>
 								</div>
 							</Link>
 						</div>
@@ -41,9 +41,9 @@ function Home() {
 										src={bride}
 										width="120"
 										height="120"
-										alt=""
+										alt="Sreeja"
 									/>
-									<label className="profile-name">Mohana Lahari</label>
+									<label className="profile-name">Sreeja</label>
 								</div>
 							</Link>
 						</div>

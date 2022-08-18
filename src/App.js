@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Home from "./Home";
-import Bride from "./Bride";
+import BrideAndGroom from "./BrideAndGroom";
 import Invitation from "./Invitation";
 import Welcome from "./welcome";
 
@@ -21,10 +21,10 @@ function App() {
 						<Redirect to="/welcome" />
 					</Route>
 					<Route path="/groom">
-						<Bride />
+						<BrideAndGroom />
 					</Route>
 					<Route path="/bride">
-						<Bride />
+						<BrideAndGroom />
 					</Route>
 					<Route path="/invitation">
 						<Invitation />
