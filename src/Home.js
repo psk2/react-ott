@@ -18,6 +18,21 @@ function Home() {
 						Whose Wedding ?
 					</div>
 					<div className="row d-flex justify-content-center align-items-center  profiles-row">
+					<div className="">
+							<Link to="/bride" className="profile">
+								<div>
+									<img
+										className="profiles-gate-container"
+										src={bride}
+										width="120"
+										height="120"
+										alt="Sreeja"
+									/>
+									<label className="profile-name">Sreeja</label>
+								</div>
+							</Link>
+						</div>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<div className="">
 							<Link to="/groom" className="profile">
 								<div>
@@ -29,21 +44,6 @@ function Home() {
 										alt="Subbu"
 									/>
 									<label className="profile-name">Subramanyam</label>
-								</div>
-							</Link>
-						</div>
-          				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           				<div className="">
-							<Link to="/bride" className="profile">
-								<div>
-									<img
-										className="profiles-gate-container"
-										src={bride}
-										width="120"
-										height="120"
-										alt="Sreeja"
-									/>
-									<label className="profile-name">Sreeja</label>
 								</div>
 							</Link>
 						</div>
