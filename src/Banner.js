@@ -82,9 +82,10 @@ function Banner() {
                   >
                     <FontAwesomeIcon icon={faPlay} /> &nbsp; Play Trailer
                   </button>
-                  <button className="banner__button" onClick={() => playLive()}>
+        					{/* commenting for future */}
+                  {/* <button className="banner__button" onClick={() => playLive()}>
                     <FontAwesomeIcon icon={faPlay} /> &nbsp; Watch Live
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </React.Fragment>
