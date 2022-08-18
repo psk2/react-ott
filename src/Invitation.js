@@ -1,9 +1,9 @@
 import React from "react";
 import "./invitation.css";
-import invitation1 from "./Images/invitations/invitation1.jpg";
-import invitation2 from "./Images/invitations/invitation2.jpg";
-import invitation3 from "./Images/invitations/invitation3.jpg";
-import invitation4 from "./Images/invitations/invitation4.jpg";
+import invitation1 from "./Images/invitations/invitation1.jpeg";
+import invitation2 from "./Images/invitations/invitation2.jpeg";
+import invitation3 from "./Images/invitations/invitation3.jpeg";
+import invitation4 from "./Images/invitations/invitation4.jpeg";
 import Nav from "./Nav";
 
 function Invitation() {
@@ -13,19 +13,19 @@ function Invitation() {
       <div className="invitation">
         <div className="gallery gallery1">
           <img className="gallery__image" src={invitation1} alt="Invitation" />
-          <div className="desc">Sai Krishna weds Mohana Lahari</div>
+          <div className="desc">Sreeja Weds Subramanyam</div>
         </div>
         <div className="gallery">
           <img className="gallery__image" src={invitation2} alt="Invitation" />
-          <div className="desc">Sai Krishna weds Mohana Lahari</div>
+          <div className="desc">Sreeja Weds Subramanyam</div>
         </div>
         <div className="gallery">
           <img className="gallery__image" src={invitation3} alt="Invitation" />
-          <div className="desc">Mohana Lahari Weds Sai Krishna</div>
+          <div className="desc">Subramanyam weds Sreeja</div>
         </div>
         <div className="gallery">
           <img className="gallery__image" src={invitation4} alt="Invitation" />
-          <div className="desc">Mohana Lahari Weds Sai Krishna</div>
+          <div className="desc">Subramanyam weds Sreeja</div>
         </div>
       </div>
     </React.Fragment>

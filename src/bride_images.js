@@ -1,17 +1,19 @@
-import image1 from "./Images/bride/image1.jpg";
-import image2 from "./Images/bride/image2.jpg";
-import image3 from "./Images/bride/image3.jpg";
-import image4 from "./Images/bride/image4.jpg";
-import image5 from "./Images/bride/image5.jpg";
-import image6 from "./Images/bride/image6.jpg";
-import image7 from "./Images/bride/image7.jpg";
-import image8 from "./Images/bride/image8.jpg";
-import image9 from "./Images/bride/image9.jpg";
+import image1 from "./Images/bride/image1.jpeg";
+import image2 from "./Images/bride/image2.jpeg";
+import image3 from "./Images/bride/image3.jpeg";
+import image4 from "./Images/bride/image4.jpeg";
+import image5 from "./Images/bride/image5.jpeg";
+import image6 from "./Images/bride/image6.jpeg";
+import image7 from "./Images/bride/image7.jpeg";
+import image8 from "./Images/bride/image8.jpeg";
+import image9 from "./Images/bride/image9.jpeg";
 import image10 from "./Images/bride/image10.jpg";
-import image11 from "./Images/bride/image11.jpg";
-import image12 from "./Images/bride/image12.jpg";
-import image13 from "./Images/bride/image13.jpg";
-// import image14 from "./Images/bride/image14.jpg";
+import image11 from "./Images/bride/image11.jpeg";
+import image12 from "./Images/bride/image12.jpeg";
+import image13 from "./Images/bride/image13.jpeg";
+import image14 from "./Images/bride/image14.jpeg";
+import image15 from "./Images/bride/image15.jpeg";
+import image16 from "./Images/bride/image16.jpeg";
 
 const brideImages = [
   {
@@ -79,21 +81,21 @@ const brideImages = [
     name: "Lucifer",
     poster_path: image13,
   },
-  // {
-  //   id: 14,
-  //   name: "Ary",
-  //   poster_path: image14,
-  // },
-  // {
-  //   id: 15,
-  //   name: "Ary",
-  //   poster_path: image3,
-  // },
-  // {
-  //   id: 16,
-  //   name: "Lucifer",
-  //   poster_path: image1,
-  // },
+  {
+    id: 14,
+    name: "Ary",
+    poster_path: image14,
+  },
+  {
+    id: 15,
+    name: "Ary",
+    poster_path: image15,
+  },
+  {
+    id: 16,
+    name: "Lucifer",
+    poster_path: image16,
+  },
   // {
   //   id: 17,
   //   name: "Ary",

@@ -21,9 +21,9 @@ function Banner() {
 	const location = useLocation();
 
 	// Youtube videos links - VIdeo ID
-	const groom_titles = "sUiZbwtLV2U";
-	const bride_titles = "_PRM6THEXQo";
-	const live_video = "lali8J49-ac";
+	const groom_titles = "otxImspdgDk";
+	const bride_titles = "otxImspdgDk";
+	const live_video = "otxImspdgDk";
 
 	let image_src = poster2;
 	const banner_descripion = `We may not have it all together, but together we have it all.`;

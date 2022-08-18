@@ -1,17 +1,17 @@
-import image1 from "./Images/groom/image1.jpg";
-import image2 from "./Images/groom/image2.jpg";
-import image3 from "./Images/groom/image3.jpg";
-import image4 from "./Images/groom/image4.jpg";
-import image5 from "./Images/groom/image5.jpg";
-import image6 from "./Images/groom/image6.jpg";
-import image7 from "./Images/groom/image7.jpg";
-import image8 from "./Images/groom/image8.jpg";
-import image9 from "./Images/groom/image9.jpg";
-import image10 from "./Images/groom/image10.jpg";
+import image1 from "./Images/groom/image1.jpeg";
+import image2 from "./Images/groom/image2.jpeg";
+import image3 from "./Images/groom/image3.jpeg";
+import image4 from "./Images/groom/image4.jpeg";
+import image5 from "./Images/groom/image5.jpeg";
+import image6 from "./Images/groom/image6.jpeg";
+import image7 from "./Images/groom/image7.jpeg";
+import image8 from "./Images/groom/image8.jpeg";
+import image9 from "./Images/groom/image9.jpeg";
+import image10 from "./Images/groom/image10.jpeg";
 import image11 from "./Images/groom/image11.jpg";
-import image12 from "./Images/groom/image12.jpg";
-import image13 from "./Images/groom/image13.jpg";
-import image14 from "./Images/groom/image14.jpg";
+import image12 from "./Images/groom/image12.JPG";
+// import image13 from "./Images/groom/image13.jpeg";
+// import image14 from "./Images/groom/image14.jpeg";
 
 const groomImages = [
   {
@@ -74,16 +74,16 @@ const groomImages = [
     name: "Ary",
     poster_path: image12,
   },
-  {
-    id: 13,
-    name: "Lucifer",
-    poster_path: image13,
-  },
-  {
-    id: 14,
-    name: "Ary",
-    poster_path: image14,
-  },
+  // {
+  //   id: 13,
+  //   name: "Lucifer",
+  //   poster_path: image13,
+  // },
+  // {
+  //   id: 14,
+  //   name: "Ary",
+  //   poster_path: image14,
+  // },
   // {
   //   id: 15,
   //   name: "Ary",

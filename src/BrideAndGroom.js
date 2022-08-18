@@ -26,8 +26,12 @@ function BrideAndGroom() {
 			/>
 			<div className="footer">
 				<footer className="location-text">
-					<a href="https://goo.gl/maps/dj7Zi3YTyNrwscJe9" target="_blank" rel="noopener noreferrer">
-						You Can Find Venue Directions Here!
+					<a href="https://goo.gl/maps/mNuXKj19VgmZCQuh6" target="_blank" rel="noopener noreferrer">
+						Click Here for <b><i>Wedding</i></b> Venue Directions <u>(Kasturi Devi Gardens)</u>
+					</a>
+					<br></br>
+					<a href="https://goo.gl/maps/s1PU6ZnmYCP7QHbj8" target="_blank" rel="noopener noreferrer">
+						Click Here for <b><i>Reception</i></b> Venue Directions <u>(Krishnam Rajeswaramma Town Hall)</u>
 					</a>
 				</footer>
 			</div>
