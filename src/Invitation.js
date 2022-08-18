@@ -19,14 +19,15 @@ function Invitation() {
           <img className="gallery__image" src={invitation2} alt="Invitation" />
           <div className="desc">Sreeja Weds Subramanyam</div>
         </div>
-        <div className="gallery">
+        {/* commenting for future */}
+        {/* <div className="gallery">
           <img className="gallery__image" src={invitation3} alt="Invitation" />
           <div className="desc">Subramanyam weds Sreeja</div>
         </div>
         <div className="gallery">
           <img className="gallery__image" src={invitation4} alt="Invitation" />
           <div className="desc">Subramanyam weds Sreeja</div>
-        </div>
+        </div> */}
       </div>
     </React.Fragment>
   );
