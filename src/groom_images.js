@@ -9,7 +9,7 @@ import image8 from "./Images/groom/image8.jpeg";
 import image9 from "./Images/groom/image9.jpeg";
 import image10 from "./Images/groom/image10.jpeg";
 import image11 from "./Images/groom/image11.jpg";
-import image12 from "./Images/groom/image12.JPG";
+import image12 from "./Images/groom/image12.jpeg";
 // import image13 from "./Images/groom/image13.jpeg";
 // import image14 from "./Images/groom/image14.jpeg";
 
