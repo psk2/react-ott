@@ -8,7 +8,15 @@
 }
 .footer {
   position:relative;
-  height:100px;
-  margin-top:-20px;
+  margin-top:20px;
   padding:0;
+}
+
+.author {
+  text-align: right;
+  color: white;
+  font-size: 11px;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-style: italic;
 }
