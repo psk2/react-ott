@@ -28,7 +28,7 @@ function Banner() {
   const [showTitles, setShowTitles] = useState(false);
   const [showLive, setShowLive] = useState(false);
   const [showBanner, setShowBanner] = useState(true);
-  const [isLiveFromYoutube, ] = useState(true);
+  const [isLiveFromYoutube, ] = useState(false);
 
   const playTitles = () => {
     setShowTitles(true);
@@ -36,7 +36,7 @@ function Banner() {
   };
   const playLive = () => {
     if (!isLiveFromYoutube) {
-      window.open("https://www.youtube.com/", "_blank");
+      window.open("https://netlivehub.com/subramanyamwedssreeja/", "_blank");
     } else {
       setShowLive(true);
       setShowBanner(false);
@@ -83,9 +83,9 @@ function Banner() {
                     <FontAwesomeIcon icon={faPlay} /> &nbsp; Play Trailer
                   </button>
         					{/* commenting for future */}
-                  {/* <button className="banner__button" onClick={() => playLive()}>
+                  <button className="banner__button" onClick={() => playLive()}>
                     <FontAwesomeIcon icon={faPlay} /> &nbsp; Watch Live
-                  </button> */}
+                  </button>
                 </div>
               </div>
             </React.Fragment>
